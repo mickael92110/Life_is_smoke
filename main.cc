@@ -27,7 +27,7 @@ int main()
 
     // Load a music to play
     sf::Music music;
-    if (!music.openFromFile("Summer.ogg"))
+    if (!music.openFromFile("15 Jonathan Morali _ Golden Hour.ogg"))
         return EXIT_FAILURE;
     // Play the music
     music.play();
