@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+
 #ifndef WINDOW_H
 #define WINDOW_H
 
@@ -20,13 +21,13 @@ class Window{
     void ToggleFullscreen();
     void Draw(sf::Drawable& l_drawable);
   private:
-    void Setup(const std::string& l_title,
-    const sf::Vector2u& l_size);
+    void Setup(const std::string& l_title, const sf::Vector2u& l_size);
     void Destroy();
     void Create();
     sf::RenderWindow m_window;
     sf::Vector2u m_windowSize;
     std::string m_windowTitle;
+    sf::Image icon;
     bool m_isDone;
     bool m_isFullscreen;
 };

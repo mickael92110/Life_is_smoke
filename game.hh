@@ -18,11 +18,11 @@ class Game{
     Window* GetWindow();
 
   private:
-    void MoveButterfly();
+    void changeBackground(std::string img);
     Window m_window;
-    sf::Texture m_ButterflyTexture;
-    sf::Sprite m_Butterfly;
-    sf::Vector2i m_increment;
+    sf::Texture backgroundTexture;
+    sf::Sprite background;
+    
 };
 
 
